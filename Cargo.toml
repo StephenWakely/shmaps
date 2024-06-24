@@ -1,0 +1,11 @@
+[package]
+name = "shmaps"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ansi_brush = "0.0.31"
+chrono = "0.4.38"
+clap = { version = "4.5.7", features = ["derive"] }
+nix = { version = "0.29.0", features = ["feature"] }
+nom = "7.1.3"
