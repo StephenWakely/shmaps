@@ -14,10 +14,10 @@ pub fn diff_sorted(vec1: &[MemoryMap], vec2: &[MemoryMap]) -> Diffs {
 
     while i < vec1.len() && j < vec2.len() {
         if vec1[i] < vec2[j] {
-            diffs.added.push(vec1[i].clone());
+            diffs.removed.push(vec1[i].clone());
             i += 1;
         } else if vec1[i] > vec2[j] {
-            diffs.removed.push(vec2[j].clone());
+            diffs.added.push(vec2[j].clone());
             j += 1;
         } else {
             if i < vec1.len()
